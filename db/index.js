@@ -28,10 +28,15 @@ async function getAllPosts() {
   }
 }
 async function getAllTags() {
- const { rows } = await client.query(
-  `SELECT * FROM tags;
-  `);
-  return rows;
+  try {
+    const { rows } = await client.query(
+     `SELECT * FROM tags;
+     `);
+
+    return rows;
+  } catch (error) {
+    throw error;
+  }
 }
 
 async function getPostsByUser(userId) {
