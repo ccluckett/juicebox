@@ -12,7 +12,8 @@ const { client,
         createPostTag,
         getPostById, 
         getPostsByTagName,
-        getAllTags
+        getAllTags,
+        getUserByUsername
       } = require('./index');
 
 async function dropTables(){
@@ -178,6 +179,10 @@ async function testDB() {
       console.log("Calling getUserById with 1");
       const albert = await getUserById(1);
       console.log("Result:", albert);
+
+      console.log("Calling getUserByUsername with glamgal");
+      const joshua = await getUserByUsername("glamgal");
+      console.log("Result:", joshua);
 
       console.log("Calling getPostsByTagName with #happy");
       const postsWithHappy = await getPostsByTagName("#happy");
