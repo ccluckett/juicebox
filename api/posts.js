@@ -127,4 +127,3 @@ postsRouter.delete('/:postId', requireUser, async (req, res, next) => {
 
 module.exports = postsRouter;
 
-//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhbGJlcnQiLCJwYXNzd29yZCI6ImJlcnRpZTk5IiwibmFtZSI6Ik5ld25hbWUgU29nb29kIiwibG9jYXRpb24iOiJMZXN0ZXJ2aWxsZSwgS1kiLCJhY3RpdmUiOnRydWUsImlhdCI6MTY4MjYxODQ5OSwiZXhwIjoxNjgzMjIzMjk5fQ.XSF53G1lMtsGspPaJf163Hwnwvq-rjbmDwr6daRkODc
